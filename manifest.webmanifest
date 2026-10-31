@@ -1,0 +1,24 @@
+{
+  "id": "/",
+  "name": "Bangla QR 249",
+  "short_name": "Bangla QR",
+  "description": "Offline QR Generator",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#073e32",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
