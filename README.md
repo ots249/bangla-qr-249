@@ -1,18 +1,24 @@
 # Bangla QR 249
 
-Bangla QR 249 is a mobile-first QR generator Progressive Web App.
+Offline-capable Progressive Web App QR generator.
 
 **Live app:** https://banglaqr249.vercel.app/
 
-## Project files
-- `index.html` — application interface
-- `manifest.webmanifest` — PWA metadata and app icons
-- `sw.js` — service worker and offline app-shell caching
-- `logo.svg` — Bangla QR brand logo
-- `qrcode.js` — bundled QR generation library (when present in the deployed build)
+## Features
+- QR generation is performed locally in the browser.
+- PWA manifest and service worker cache the application shell for offline use after the first online visit.
+- Mobile-first responsive interface.
 
-## PWA
-Serve the project from HTTPS or localhost. Open the site once while online so the service worker can cache the app shell, then install it from the browser menu.
+## Project files
+- `index.html` — app interface and QR payload logic
+- `qrcode.js` — bundled QR generator library
+- `manifest.webmanifest` — PWA metadata
+- `sw.js` — offline cache/service worker
+- `logo.svg` — Bangla QR logo
+- `qrcode-generator.LICENSE` — QR library license
+
+## Local development
+Serve over HTTPS or localhost. Service workers require a secure context.
 
 ## Payment safety
-Generating a QR code does not confirm that a payment was made. Verify payment in the receiving account or official merchant app.
+QR generation does not confirm payment or guarantee settlement. Verify every payment in the receiving account or official merchant app.
